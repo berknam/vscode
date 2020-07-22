@@ -199,7 +199,7 @@ export class ViewController {
 							this._moveToSelect(data.position);
 						}
 					}
-				} else {
+				} else if (!(data.middleButton && selectionClipboardIsOn)) {
 					this.moveTo(data.position);
 				}
 			}
